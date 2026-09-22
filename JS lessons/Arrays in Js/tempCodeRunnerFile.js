@@ -1,0 +1,1 @@
+number.push(6);

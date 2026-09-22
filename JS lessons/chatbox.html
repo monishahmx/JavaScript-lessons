@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Chatbot</title>
+    <style>
+      #chatbox {
+        width: 300px;
+        height: 400px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        overflow-y: auto;
+      }
+      #userInput {
+        width: 240px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>AI Chatbot Example</h2>
+    <div id="chatbox"></div>
+    <input id="userInput" type="text" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+      const chatbox = document.getElementById("chatbox");
+
+      function sendMessage() {
+        const input = document.getElementById("userInput").value;
+        displayMessage("You: " + input);
+        const response = chatbotAgent(input);
+        displayMessage("Bot: " + response);
+        document.getElementById("userInput").value = "";
+      }
+
+      function displayMessage(message) {
+        const p = document.createElement("p");
+        p.textContent = message;
+        chatbox.appendChild(p);
+      }
+
+      // Simple AI agent logic
+      function chatbotAgent(input) {
+        input = input.toLowerCase();
+        if (input.includes("hello")) return "Hi there! How can I help you?";
+        if (input.includes("javascript"))
+          return "JavaScript is great for web development!";
+        if (input.includes("bye")) return "Goodbye! Have a nice day.";
+        return "I'm not sure about that, but I'm learning!";
+      }
+    </script>
+  </body>
+</html>
