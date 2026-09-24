@@ -68,9 +68,9 @@ console.log(redBull(user));
 
 // ARRAYS AS A PARAMETERS
 
-function getRandomNum(arr) {
+function getRandomNum(...arr) {
   const numIndex = Math.floor(Math.random() * arr.length);
   const item = arr[numIndex];
   console.log(item);
 }
-getRandomNum([2, 3, 4, 5, 7, 8, 9, 3]);
+getRandomNum(2, 7, 8, 9, 7, 4, 10, 3);
