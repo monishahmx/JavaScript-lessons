@@ -69,4 +69,8 @@ r = todo[0].name;
 //TO COLLECT ALL THE KEY VAULE OF AN OBJECT WE CAN USE KEY METHOD Object.Keys();
 
 r = Object.keys(driver);
+
+//TO COLLECT ALL THE VAULE ELEMENTS FROM A OJ=BJECT WE CAN USE VAULE METHOD
+
+r = Object.values(driver);
 console.log(r);
