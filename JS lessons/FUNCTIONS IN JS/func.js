@@ -74,3 +74,16 @@ function getRandomNum(...arr) {
   console.log(item);
 }
 getRandomNum(2, 7, 8, 9, 7, 4, 10, 3);
+
+//NESTEED FUNCTIONS AND SCOPES
+
+function firstNum() {
+  const x = 100;
+
+  function secondNum() {
+    const y = 300;
+    console.log(x + y);
+  }
+  secondNum();
+}
+firstNum();
