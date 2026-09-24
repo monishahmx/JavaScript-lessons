@@ -39,3 +39,23 @@ const num = [1, 2, 3, 4, 5];
 
 const [first, second, ...rest] = num;
 console.log(first, second, rest);
+
+//JSON STAND FOR JAVASCRIPT OBJECT NOTATION AND IT IS A DATA FORMAT THAT IS USED TO STORE AND TRANSPORT DATA
+
+const driver = {
+  name: `Max Verstappen`,
+  age: 30,
+  team: `Red Bull Racing`,
+};
+// to convert an object into a string we can use JSON.stringify() method
+
+const str = JSON.stringify(driver); //this will convert the object into a string
+console.log(str, typeof str);
+
+//to convert a string into an object we can use JSON.parse() method
+
+const obj = JSON.parse(str); //this will convert the string into an object
+console.log(obj, typeof obj);
+
+//OBJECT CHALLENGES
+console.log(object);
