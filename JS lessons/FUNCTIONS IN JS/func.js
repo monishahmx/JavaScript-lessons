@@ -87,3 +87,24 @@ function firstNum() {
   secondNum();
 }
 firstNum();
+
+//FUNCTION DECLARATION AND FUNCTION EXPERSSION
+
+function addDollerSign(vaule) {
+  return `$` + vaule;
+}
+
+console.log(addDollerSign(100));
+
+//FUNCTION EXPRESSION
+
+/**
+ * ASSIGNING A VARIABLE WITH A FUNCTION
+ */
+
+const addPlusSign = function (vaule) {
+  return `+` + vaule;
+};
+
+let total = addPlusSign(100);
+console.log(total);
