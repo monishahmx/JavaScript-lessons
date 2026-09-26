@@ -53,6 +53,7 @@ function add(num1, num2) {
   return result;
 }
 add(3, 6);
+
 //TRUTHY OR FALSY VALUES
 
 //FALSY VAULES
@@ -62,3 +63,12 @@ add(3, 6);
 //null
 //undefined
 //NaN
+
+//truthy vaules
+//everything else that is not falsy
+//true
+//"0"
+//" " space in a string
+//[] empty array
+//{} empty objects
+//function(){} empty functions
