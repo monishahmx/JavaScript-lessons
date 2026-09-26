@@ -49,3 +49,26 @@ if (hour < 12) {
 } else {
   console.log(`Good Night`);
 }
+
+//NESTED IF
+
+if (hour < 12) {
+  console.log(`Good Morning`);
+  if (hour === 6) {
+    console.log(`Wake up`);
+  }
+} else if (hour < 18) {
+  console.log(`Good Afternoon`);
+} else {
+  console.log(`Good Night`);
+  if (hour >= 20) {
+    console.log(`zzzzzzz`);
+  }
+}
+
+//HAVING MUTIPLE IF CONDITIONS
+if (hour >= 7 && hour <= 15) {
+  console.log(`Its work time`);
+} else {
+  console.log(`Free time`);
+}
