@@ -72,3 +72,50 @@ add(3, 6);
 //[] empty array
 //{} empty objects
 //function(){} empty functions
+
+//LOGICAL OPERATORS
+
+//AND && ONLY WORKS WHEN THE BOTH OF THR CONDITION IS TRUE
+//IT USALLY PRINT SFALSY VAULE OR THE LAST VAULE
+
+const num = 10 && 20;
+const num1 = 0 && 10;
+console.log(num);
+console.log(num1);
+
+//or operator \\
+
+//WORKS WHEN ONLY ONE OF THE CONSITION IS TRUE
+//IT PRINTS OUT THE FIRST TRUE VAULE OR THE LAST
+
+const a = 2 || 9;
+console.log(a);
+
+//TRENARY OPERATOR
+
+const age = 20;
+if (age >= 18) {
+  console.log(`YOU ARE  ELEGIBLE TO VOTE! `);
+} else {
+  console.log(`YOU ARE NOT ELEGIBLE TO VOTE!`);
+}
+
+//how to simplify the if condition with  the trenary operartor
+
+age >= 18
+  ? console.log(`YOU ARE ELEGIBLE TO VOTE!`)
+  : console.log(`YOU ARE NOT ELEIGIBLE TO VOTE !`);
+
+//ASSIGNING A CONDITIONAL VAULE TO THE VARIABLE
+
+const canVote = age >= 18 ? `YOU CAN VOTE ` : `YOU CAN NOT VOTE`;
+console.log(canVote);
+
+//
+
+const auth = true;
+
+const redirect = auth
+  ? (alert(`Welcome to the dashboard`), `/dashboard`)
+  : (alert(`Access Denied`), `/login`);
+console.log(redirect);
