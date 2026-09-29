@@ -121,3 +121,15 @@ map.set(`age`, 30);
 for (const [key, vaule] of map) {
   console.log(key, vaule);
 }
+
+//FOR IN LOOP SIN JS
+//IT IS MAINLY USED TO LOOP THROUGH AN KEYS IN THE OBJECT AND THE ARRAYS
+
+const colorsObj = {
+  color1: `bule`,
+  color2: `Red`,
+  color3: `Yellow`,
+};
+for (const colors in colorsObj) {
+  console.log(colors, colorsObj[colors]);
+}
