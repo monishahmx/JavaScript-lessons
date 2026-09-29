@@ -122,7 +122,7 @@ for (const [key, vaule] of map) {
   console.log(key, vaule);
 }
 
-//FOR IN LOOP SIN JS
+//FOR IN LOOPs IN JS
 //IT IS MAINLY USED TO LOOP THROUGH AN KEYS IN THE OBJECT AND THE ARRAYS
 
 const colorsObj = {
