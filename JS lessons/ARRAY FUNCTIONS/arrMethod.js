@@ -50,7 +50,7 @@ console.log(arr1);
 
 //shorther version
 const arr2 = arr.filter((number) => number % 2 === 0);
-console.log(arr);
+console.log(arr2);
 
 //SAME THING WITH FOR EACH
 
@@ -61,3 +61,21 @@ arr.forEach((arr3) => {
   }
 });
 console.log(evenNumbers);
+
+//ARRAY MAP METHOD
+
+const num = [1, 2, 3, 4, 5, 6];
+const doubeNum = num.map((x) => x * 3);
+console.log(doubeNum);
+
+//CHAIN MAP METHODS
+const num1 = [1, 2, 3, 4, 5, 6];
+const sqaureDoubles = num1.map((x) => Math.sqrt(x));
+num1.map((double) => double * 2);
+console.log(sqaureDoubles);
+
+//chaining a different methods
+
+const num2 = num.filter((y) => y % 2 === 0);
+num.map((y) => y * 5);
+console.log(num2);
