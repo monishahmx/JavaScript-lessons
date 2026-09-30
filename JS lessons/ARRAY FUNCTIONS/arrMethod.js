@@ -79,3 +79,40 @@ console.log(sqaureDoubles);
 const num2 = num.filter((y) => y % 2 === 0);
 num.map((y) => y * 5);
 console.log(num2);
+
+//REDUCE
+
+//REDUCE() METHODS EXECITES A USER SUPPILED REDUCE CALLBACK ON EACH ELEMENT OF THE ARRAY IN ORDER PASSING IN THE RETUEN VAULE FROM THR CALCULATION ON THR PROCEDDING ELEMENTS.THE FINAL RESULT OF THR RUNNING THR REDUCER ACROSS ALL THE ELEMNTS OF THE ARRAY IS A SINGLE VAULE
+
+const Number = [1, 2, 3, 4, 5, 6, 7, 8];
+const sum = Number.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0,
+);
+console.log(sum);
+
+//ARRAY CHALLENGE
+
+const words = [`max`, `charles`, `kimi`, `carlos`];
+const cWords = words.map((word) => {
+  return word[0].toUpperCase() + word.slice(1, word.length);
+});
+console.log(cWords);
+
+var a = {
+  id: 100,
+  title: `iterview`,
+  name: `moni`,
+};
+var b = {
+  num: 1,
+  profession: `racer`,
+  deiver: `Max`,
+};
+
+var c = { ...a, ...b };
+console.log(c);
+
+const x = [];
+x[4] = 1;
+x.forEach((i) => console.log(i));
